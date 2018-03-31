@@ -1,0 +1,104 @@
+body {
+   background: #ccc;
+   height: 100%;
+   width: 100%;
+}
+
+.navbar {
+   margin-bottom: 2;
+}
+
+.parrilla {
+   /*background: #333;*/
+   background: radial-gradient(#111010, #292828);
+   /*sombra*/
+   -webkit-box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.87);
+   -moz-box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.87);
+   box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.87);
+   /*borde*/
+   border-top: 1.5px solid #555;
+
+   height: 92px;
+   overflow: hidden;
+   margin-left: 0;
+   margin-right: 0;
+
+   position: fixed;
+   width: 100%;
+   bottom: 0px;
+
+   text-align: center;
+}
+
+.parrilla > div {
+   margin: 0 auto;
+   height: 100%;
+   display: inline-block;;
+}
+
+.parrilla > div:first-child > * {
+   height: 100%;
+   display: inline-block;
+   vertical-align: middle;
+}
+
+.parrilla > div > figure img {
+   height: 100%;
+}
+
+/*h2 {
+   font-size: 5vmin;
+}
+h3 {
+   font-size: 3vmin;
+}
+h4 {
+   font-size: 2vmin;
+}*/
+
+.parrilla .col-sm-3 {
+   display: table;
+}
+
+.controles {
+   display: table-cell;
+   vertical-align: middle;
+   padding-top: 5px;
+   text-align: left;
+}
+
+.controles button {
+   vertical-align: middle;
+}
+
+.boton1 {
+   display: block;
+}
+
+.boton2 {
+   display: none;
+}
+
+.section-container {
+   height: 100%;
+   overflow: auto;
+   padding: 15px;
+   position: relative;
+}
+
+/* Media Queries */
+@media all and (orientation:portrait) {
+    /* Cuando el alto de la pantalla es mayor al ancho */
+    /*.parrilla {
+      height: 15%;
+   }*/
+}
+
+@media only screen and (max-width: 480px) {
+    .boton1 {
+      display: none;
+   }
+   .boton2 {
+      display: block;
+   }
+}
